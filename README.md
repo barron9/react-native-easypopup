@@ -12,13 +12,12 @@ Requirements
 
 ### 4. imports
 ```
-import FoundationIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { IconButton } from 'react-native-paper';
+import Popup from 'react-native-easypopup';
 ```
 ### 5. place component
 Place in you js
 ```
-   <GMConfirmationPopup
+   <Popup
                     showpopup={this.state.showpopup}
                     type="alert" //info
                     semitransparent={false}

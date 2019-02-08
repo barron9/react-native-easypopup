@@ -1,5 +1,9 @@
 # react-native-easypopup
 
+```
+npm i react-native-easypopup
+```
+
 Requirements
 
 ### 1.npm i react-native-paper

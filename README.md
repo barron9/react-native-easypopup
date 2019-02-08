@@ -1,4 +1,4 @@
-# react-native-confirmationPopup
+# react-native-easypopup
 
 Requirements
 

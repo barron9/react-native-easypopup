@@ -7,9 +7,10 @@ Requirements
 # 3.react-native link react-native-vector-icons
 
 # 4. imports
+```
 import FoundationIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { IconButton } from 'react-native-paper';
-
+```
 # 5. place component
 Place in you js
 ```

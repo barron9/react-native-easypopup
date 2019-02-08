@@ -12,6 +12,7 @@ import { IconButton } from 'react-native-paper';
 
 # 5. place component
 Place in you js
+```
    <GMConfirmationPopup
                     showpopup={this.state.showpopup}
                     type="alert" //info
@@ -23,3 +24,4 @@ Place in you js
                     cancelaction={() => alert('silme işlemi iptal edildi')}
                     acceptbuttontitle={'Kuponu Sil'}
                     cancelbuttontitle={'İptal Et'} />
+```

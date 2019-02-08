@@ -6,7 +6,6 @@ npm i react-native-easypopup
 
 Requirements
 
-### 1.npm i react-native-paper
 ### 2.npm i react-native-vector-icons
 ### 3.react-native link react-native-vector-icons
 

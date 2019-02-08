@@ -1,5 +1,5 @@
 # react-native-easypopup
-
+![alt-text](https://github.com/barron9/react-native-easypopup/blob/master/Screenshot_1549644994.png)
 ```
 npm i react-native-easypopup
 ```

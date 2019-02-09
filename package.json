@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "berkin tatlisu"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "react-native-vector-icons": "^6.2.0"
+  },
+  "deprecated": false,
+  "description": "another popup for react native with lots of custom features",
+  "homepage": "https://github.com/barron9/react-native-easypopup",
+  "keywords": [
+    "popup",
+    "modal",
+    "react-native"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "react-native-easypopup",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.14"
+}

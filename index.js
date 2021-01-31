@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Modal, TouchableHighlight } from 'react-native';
+import { View, Text, Dimensions,TouchableOpacity, Modal, TouchableHighlight } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
+var height = Dimensions.get('window').height;
+var width = Dimensions.get('window').width;
 const Popup = (props) => {
     return (
         <Modal visible={props.showpopup} transparent={true} animationType={props.animation ? props.animation : 'fade'}
@@ -16,37 +17,37 @@ const Popup = (props) => {
                 shadowOpacity: 0.20,
                 shadowRadius: 1.41,
                 elevation: 2,
-                height: 200,
+                height: 125,
                 bottom: 0,
-                right: 0,
-                left: 0,
+                right: width*0.05,
+                left: width*0.05,
                 backgroundColor: 'white',
                 flex: 30,
                 borderColor: '#ccc',
                 borderWidth: .6,
-                borderTopLeftRadius: 10,
-                borderTopRightRadius: 10
+                borderTopLeftRadius: 15,
+                borderTopRightRadius: 15
             }}>
-                <Icon
+                {/* <Icon
                     style={{ position: 'absolute', top: 0, right: 0, margin: 20 }}
                     name="close"
                     color={"#333"}
                     size={20}
                     onPress={() => props && props.onPress()}
-                />
-                <View style={{ flexDirection: 'row', flex: 300, alignItems: 'center', marginLeft: 20 }}>
+                /> */}
+                {/* <View style={{ flexDirection: 'row', flex: 300, alignItems: 'center', marginLeft: 20 }}>
                     <View>
                         <Icon name={props.type && props.type == "info" ? "information" : "alert"} onPress={() => props && props.onPress()} size={40} color={"#333"} />
                     </View>
                     <View style={{ width: 250, marginLeft: 5 }}>
                         <Text style={{ fontSize: 20 }} numberOfLines={2}>{props.contenttext}</Text>
                     </View>
-                </View>
-                <View style={{ height: 60, flex: 100, flexDirection: 'row' }}>
-                    <TouchableHighlight underlayColor={'#eee'} activeOpacity={.9} onPress={() => props && props.confirmaction()} style={{ borderColor: '#eee', borderWidth: 1, flex: 50, alignItems: 'center', justifyContent: 'center', backgroundColor: 'orange' }}>
-                        <Text style={{ color: 'white', fontSize: 20 }}>{props.acceptbuttontitle}</Text>
+                </View> */}
+                <View style={{ height: 10, flex: 1, flexDirection:'column',borderTopLeftRadius: 15, }}>
+                    <TouchableHighlight underlayColor={'#eee'} activeOpacity={.9} onPress={() => props && props.confirmaction()} style={{ borderColor: '#eee', borderWidth: 1, flex: 50, alignItems: 'center', justifyContent: 'center',borderTopLeftRadius: 15,borderTopRightRadius: 15,   }}>
+                        <Text style={{ color: 'black', fontSize: 20 }}>{props.acceptbuttontitle}</Text>
                     </TouchableHighlight>
-                    <TouchableHighlight underlayColor={'#eee'} activeOpacity={.9} onPress={() => props && props.cancelaction()} style={{ borderColor: '#eee', borderWidth: 1, flex: 50, alignItems: 'center', justifyContent: 'center' }}>
+                    <TouchableHighlight underlayColor={'#eee'} activeOpacity={.9} onPress={() => props && props.cancelaction()} style={{ borderColor: '#eee', borderWidth: 1, flex: 50, alignItems: 'center', justifyContent: 'center',borderTopRightRadius: 15, }}>
                         <Text style={{ fontSize: 20 }}>{props.cancelbuttontitle}</Text>
                     </TouchableHighlight>
                 </View>
